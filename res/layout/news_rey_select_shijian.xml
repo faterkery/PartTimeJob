@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rey____s__01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/new_textviews_"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_1" />
+
+            <RelativeLayout
+                android:id="@+id/reys__01"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="调研员"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgs__01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttons__01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reys__01"
+                android:layout_alignTop="@+id/reys__01"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviews__01"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reys__01"
+                android:background="@color/gray_1" />
+            <!--  -->
+            <RelativeLayout
+                android:id="@+id/reys__02"
+                android:layout_below="@+id/textviews__01"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="周末兼职"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgs__02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     android:visibility="invisible"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttons__02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reys__02"
+                android:layout_alignTop="@+id/reys__02"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviews__02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reys__02"
+                android:background="@color/gray_1" />
+            
+            <!--  -->
+            <RelativeLayout
+                android:id="@+id/reys__03"
+                android:layout_below="@+id/textviews__02"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="长期（实习）"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgs__03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttons__03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reys__03"
+                android:layout_alignTop="@+id/reys__03"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviews__03"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reys__03"
+                android:background="@color/gray_1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

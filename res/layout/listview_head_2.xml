@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rey_lay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/kongkongk"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kongkongk"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <Button
+            android:id="@+id/button_dq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/defult_icon_classshort_nor"
+            android:text="短期兼职"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_gx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/defult_icon_classhmoney_nor"
+            android:text="高薪兼职"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_gf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/defult_icon_classoffi_nor"
+            android:text="官方推送"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_zm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/defult_icon_classweek_nor"
+            android:text="周末兼职"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

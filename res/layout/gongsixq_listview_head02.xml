@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="16dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="工作环境"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <RatingBar
+        android:id="@+id/gongsixq_ratingbar01"
+        style="@style/roomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/mycredit_TextView11"
+        android:numStars="5"
+        android:rating="4" >
+    </RatingBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/gongsixq_ratingbar01"
+        android:text="4.0"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:id="@+id/gongsixq_reylayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gongsixq_ratingbar01"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="描述相符" />
+
+        <RatingBar
+            android:id="@+id/gongsixq_ratingbar02"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:numStars="5"
+            android:rating="4" >
+        </RatingBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/gongsixq_ratingbar02"
+            android:text="4.0"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/gongsixq_reylayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gongsixq_reylayout01"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="结算效率" />
+
+        <RatingBar
+            android:id="@+id/gongsixq_ratingbar03"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:numStars="5"
+            android:rating="5" >
+        </RatingBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/gongsixq_ratingbar03"
+            android:text="5.0"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</RelativeLayout>

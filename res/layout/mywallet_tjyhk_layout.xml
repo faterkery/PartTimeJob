@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_1" >
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_tjyhk_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/tjyhk_return_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/mylogin_icon_back_nor" />
+
+        <ImageButton
+            android:id="@+id/tjyhk_return_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="添加银行卡"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_tjyhk_rey02"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/mymywallet_tjyhk_rey01"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/mymywallet_tjyhk_textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="卡类型"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/mymywallet_tjyhk_button01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/mymywallet_tjyhk_textview01"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:hint="请选择银行卡"
+            android:singleLine="true"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_tjyhk_rey03"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/mymywallet_tjyhk_rey02"
+        android:layout_marginTop="6dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/mymywallet_tjyhk_textview02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="持卡人"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/mymywallet_tjyhk_edittext01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/mymywallet_tjyhk_textview02"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:hint="姓名"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_tjyhk_rey04"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/mymywallet_tjyhk_rey03"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/mymywallet_tjyhk_textview03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="卡号"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/mymywallet_tjyhk_edittext02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@+id/mymywallet_tjyhk_textview03"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:hint="卡号"
+            android:inputType="number"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_tjyhk_rey05"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/mymywallet_tjyhk_rey04"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/mymywallet_tjyhk_textview04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="手机号"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/mymywallet_tjyhk_edittext03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/mymywallet_tjyhk_textview04"
+            android:background="@null"
+            android:inputType="number"
+            android:gravity="start|center_vertical"
+            android:hint="请输入银行预留手机号"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/mymywallet_tjyhk_rey06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mymywallet_tjyhk_rey05"
+        android:layout_marginTop="28dp"
+        >
+        <CheckBox
+            android:id="@+id/mymywallet_tjyhk_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_marginLeft="18dp"
+            android:drawableLeft="@drawable/select_mywallet_tjyhk_checkbox"
+            />
+        <TextView
+            android:id="@+id/mymywallet_tjyhk_textview05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/mymywallet_tjyhk_check"/>
+        
+        <Button
+            android:id="@+id/mymywallet_tjyhk_button02"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="《海岛兼职用户协议》"
+            android:textColor="@color/qianblue"
+            android:textSize="10sp"
+            android:background="@null"
+            android:layout_toRightOf="@+id/mymywallet_tjyhk_textview05"
+            />
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/mymywallet_tjyhk_imagebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mymywallet_tjyhk_rey06"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/mywalt_bar_xiayibu_set"
+        android:background="@null"
+        android:scaleType="fitXY"
+    />
+</RelativeLayout>

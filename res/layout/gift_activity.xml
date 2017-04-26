@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.clv.homework"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/gift_activity_button"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.clv.parttimejobs.view.ui.customview.PowerImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/gift_anim"
+        attr:auto_play="false"
+        />
+
+</RelativeLayout>

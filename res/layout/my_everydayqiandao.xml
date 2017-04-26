@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.clv.parttimejobs.view.ui.customview.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/qd_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <RelativeLayout
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@drawable/defult_icon_background_nor" >
+
+                <ImageView
+                    android:id="@+id/imageview_qd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/mes2_tab_go_nor" />
+
+                <ImageButton
+                    android:id="@+id/qd_return_button"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="7dp"
+                    android:background="@null"
+                     />
+
+                <ImageView
+                    android:id="@+id/qd_imageview_problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imageview_qd"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/defult_icon_question_nor" />
+
+                <RelativeLayout
+                    android:id="@+id/head2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignTop="@+id/qd_imageview_problem"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.clv.parttimejobs.view.ui.customview.CircleWaveView
+                        android:id="@+id/circlewaveView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageButton
+                        android:id="@+id/qd_imagebutton"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/qd_head" />
+
+                    <Button
+                        android:id="@+id/qd_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/circleProgressbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        android:background="@null"
+                        android:text="签到"
+                        android:textColor="#448aca"
+                        android:textSize="31sp" />
+
+                    <ImageView
+                        android:id="@+id/qd_button_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qd_button"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/mymrqd_icon_qd_nor" />
+
+                    <com.clv.parttimejobs.view.ui.customview.CircleProgressView
+                        android:id="@+id/circleProgressbar"
+                        android:layout_width="135dp"
+                        android:layout_height="135dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/head2"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今天可领"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textview1"
+                        android:text="20"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textview2"
+                        android:text="积分，距离领取礼品还有"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textview3"
+                        android:text="0天"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal" >
+
+                <ImageButton
+                    android:id="@+id/qd_imageview_1"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@null"
+                    android:src="@drawable/mymrd_icon_rlz_nor" />
+
+                <TextView
+                    android:id="@+id/qd_textview_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/qd_imageview_1"
+                    android:gravity="center"
+                    android:text="2016年12月" />
+
+                <ImageButton
+                    android:id="@+id/qd_imageview_2"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/qd_textview_1"
+                    android:background="@null"
+                    android:src="@drawable/mymrd_icon_rlr_nor" />
+            </RelativeLayout>
+
+            <com.clv.parttimejobs.view.ui.customview.SignView
+                android:id="@+id/activity_main_cv"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textview_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你已经连续签到" />
+
+                <TextView
+                    android:id="@+id/textview_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toRightOf="@+id/textview_text1"
+                    android:text="9"
+                    android:textColor="#448aca" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textview_text2"
+                    android:text="天" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#888888" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="14dp" >
+
+                <TextView
+                    android:id="@+id/qd_textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="签到说明：第一天签到加5分，连续第二天签到加5分，连续第"
+                    android:textColor="#bbbbbb"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/qd_textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qd_textview1"
+                    android:layout_marginTop="7dp"
+                    android:text="三天后签到加10分，以此类推。若有一天没签到，则下一次"
+                    android:textColor="#bbbbbb"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/qd_textview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qd_textview2"
+                    android:layout_marginTop="7dp"
+                    android:text="重新从5积分算起"
+                    android:textColor="#bbbbbb"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.clv.parttimejobs.view.ui.customview.SildingFinishLayout>

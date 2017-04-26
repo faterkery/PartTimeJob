@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/gray_1"
+    android:layout_height="fill_parent" >
+
+    <com.clv.parttimejobs.thirdparty.handmark.pulltorefresh.library.PullToRefreshScrollView  
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:id="@+id/order_linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@color/qianblue"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <RadioGroup
+            android:id="@+id/order_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/parttimejob"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:background="@drawable/select_ordered_button"
+                android:textColor="@drawable/selected_ordered_text"
+                android:button="@null"
+                android:gravity="center"
+                android:text="兼职"
+                 >
+                <requestFocus />
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/internship"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:background="@drawable/select_ordered_button"
+                android:textColor="@drawable/selected_ordered_text"
+                android:button="@null"
+                android:gravity="center"
+                android:text="实习"
+                 />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/order_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:focusable="false"
+        android:layout_below="@+id/order_linear_1"
+        android:layout_marginTop="13dp">
+         </FrameLayout>
+
+    </RelativeLayout>
+    </com.clv.parttimejobs.thirdparty.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

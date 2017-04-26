@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mymywallet_mybd_rey"
+    android:background="@color/gray_1" >
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_mybd_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/mymywallet_mybd_return_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/mylogin_icon_back_nor" />
+
+        <ImageButton
+            android:id="@+id/mymywallet_mybd_return_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的绑定"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_mybd_rey02"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mymywallet_mybd_rey01"
+        android:layout_marginTop="6dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/mymywallet_mybd_textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="支付宝"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <Button
+            android:id="@+id/mymywallet_mybd_button01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="修改"
+            android:textSize="15sp" 
+            android:textColor="@color/qianblue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            />
+        <EditText
+            android:id="@+id/mymywallet_mybd_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_edittext"
+            android:layout_toRightOf="@+id/mymywallet_mybd_textview01"
+            android:layout_toLeftOf="@+id/mymywallet_mybd_button01"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:hint="17858802222"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:id="@+id/mymywallet_mybd_rey03"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mymywallet_mybd_rey02"
+        android:layout_marginTop="6dp"
+        android:background="#ffffff" >
+        <TextView
+            android:id="@+id/mymywallet_mybd_textview02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="储蓄卡"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+        <Button
+            android:id="@+id/mymywallet_mybd_button02"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="添加"
+            android:textSize="15sp" 
+            android:textColor="@color/qianblue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            />
+     </RelativeLayout>
+     <TextView
+         android:layout_below="@+id/mymywallet_mybd_rey03"
+         android:background="@color/gray_1"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"/>
+     
+</RelativeLayout>

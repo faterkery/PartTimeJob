@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/tx_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/gray_1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_1" >
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_tx_rey01"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#ffffff"
+                 >
+
+                <ImageView
+                    android:id="@+id/mymywallet_tx_return_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mylogin_icon_back_nor" />
+
+                <ImageButton
+                    android:id="@+id/mymywallet_tx_return_button"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="零钱提现"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mymywallet_tx_textview01"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/mymywallet_tx_rey01"
+                android:background="@color/gray_1" />
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_tx_rey02"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/mymywallet_tx_textview01"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="总金币"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text="100.00¥"
+                    android:textColor="@color/qianblue"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mymywallet_tx_textview02"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/mymywallet_tx_rey02"
+                android:background="@color/gray_1" />
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_tx_rey03"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/mymywallet_tx_textview02"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/mymywallet_tx_textview03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="提现到:"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <com.clv.parttimejobs.view.ui.customview.MyHorizontalScrollView
+                android:id="@+id/scrollPicker"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_below="@+id/mymywallet_tx_rey03"
+                android:layout_gravity="bottom"
+                android:background="@color/gray_2"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/id_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </com.clv.parttimejobs.view.ui.customview.MyHorizontalScrollView>
+
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollPicker" >
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/mymywallet_tx_textview04"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/fragment"
+                android:background="@color/gray_1" />
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_tx_rey04"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/mymywallet_tx_textview04"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/mymywallet_tx_textview05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="提现金额:"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_tx_rey05"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/mymywallet_tx_rey04"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/mymywallet_tx_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/mywalt_icon_moeny_nor" />
+
+                <Button
+                    android:id="@+id/mymywallet_tx_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/select_button_click"
+                    android:text="全部提现"
+                    android:textColor="@color/qianblue"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/mymywallet_tx_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/mymywallet_tx_button"
+                    android:layout_toRightOf="@+id/mymywallet_tx_imageview"
+                    android:background="@drawable/bg_edittext"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/mymywallet_tx_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mymywallet_tx_rey05"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:background="@null"
+                android:src="@drawable/mywalt_bar_tixian_set" />
+            <TextView
+                android:layout_below="@+id/mymywallet_tx_imagebutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

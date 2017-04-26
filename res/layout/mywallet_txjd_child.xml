@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="186dp"
+    android:background="#888888" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_txjd_child_imageview"
+            android:layout_width="73dp"
+            android:layout_height="127dp"
+            android:src="@drawable/mywaltxq_pic_jingdu_step" />
+
+        <TextView
+            android:id="@+id/item_txjd_child_textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_txjd_child_imageview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="11-10 14:24"
+            android:textColor="#bbbbbb"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/item_txjd_child_textview02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_txjd_child_textview01"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@+id/item_txjd_child_imageview"
+            android:layout_marginLeft="20dp"
+            android:text="11-10 14:24"
+            android:textColor="#bbbbbb"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/item_txjd_child_textview03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_txjd_child_textview02"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@+id/item_txjd_child_imageview"
+            android:layout_marginLeft="20dp"
+            android:text="预计11-10 14:24之前"
+            android:textColor="#bbbbbb"
+            android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

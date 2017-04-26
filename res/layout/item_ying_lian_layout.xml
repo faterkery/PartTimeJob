@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp" >
+
+        <ImageView
+            android:id="@+id/item_mybank_layout_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/tixian_jiansyinh" />
+
+        <TextView
+            android:id="@+id/item_mybank_layout_textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/item_mybank_layout_imageview"
+            android:text="中国建设银行"
+            android:textColor="@color/gray_8" />
+
+        <TextView
+            android:id="@+id/item_mybank_layout_textview02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/item_mybank_layout_textview01"
+            android:text="**********5573" />
+        <CheckBox
+            android:id="@+id/item_mybank_layout_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/item_bank_check_img"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

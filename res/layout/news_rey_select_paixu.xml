@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rey____p__01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/new_textviewp_"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_1" />
+
+            <RelativeLayout
+                android:id="@+id/reyp__01"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="智能排序"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgp__01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonp__01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reyp__01"
+                android:layout_alignTop="@+id/reyp__01"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviewp__01"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reyp__01"
+                android:background="@color/gray_1" />
+            
+             <!--  -->
+            <RelativeLayout
+                android:id="@+id/reyp__02"
+                android:layout_below="@+id/textviewp__01"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="最新发布"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgp__02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     android:visibility="invisible"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonp__02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reyp__02"
+                android:layout_alignTop="@+id/reyp__02"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviewp__02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reyp__02"
+                android:background="@color/gray_1" />
+            
+             <!--  -->
+            <RelativeLayout
+                android:id="@+id/reyp__03"
+                android:layout_below="@+id/textviewp__02"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="结算效率"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgp__03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     android:visibility="invisible"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonp__03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reyp__03"
+                android:layout_alignTop="@+id/reyp__03"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviewp__03"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reyp__03"
+                android:background="@color/gray_1" />
+            
+             <!--  -->
+            <RelativeLayout
+                android:id="@+id/reyp__04"
+                android:layout_below="@+id/textviewp__03"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="离我最近"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgp__04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     android:visibility="invisible"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonp__04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reyp__04"
+                android:layout_alignTop="@+id/reyp__04"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviewp__04"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reyp__04"
+                android:background="@color/gray_1" />
+            
+             <!--  -->
+            <RelativeLayout
+                android:id="@+id/reyp__05"
+                android:layout_below="@+id/textviewp__04"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="尚缺人数"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imgp__05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     android:visibility="invisible"
+                    android:src="@drawable/gou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonp__05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reyp__05"
+                android:layout_alignTop="@+id/reyp__05"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textviewp__05"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reypj__05"
+                android:background="@color/gray_1" />
+            
+             
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

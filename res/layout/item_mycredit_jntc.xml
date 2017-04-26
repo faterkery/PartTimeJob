@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_text_mycredit_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"  
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/item_text_mycredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:text="技能标签"
+            android:textSize="14sp" ></TextView>
+
+
+        <EditText
+            android:id="@+id/item_text_mycredit_editview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="47dp"
+             android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_text_mycredit"
+            android:background="@drawable/bg_edittext"
+            android:text="英语四级"
+            android:textSize="14sp" >
+        </EditText>
+        <TextView
+            android:id="@+id/item_text_mycredit_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长按删除"
+            android:visibility="gone"
+             android:layout_centerVertical="true"
+            android:textSize="10sp" 
+            android:layout_marginRight="8dp"
+            android:textColor="#888888"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

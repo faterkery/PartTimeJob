@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:id="@+id/item_check_popwindow_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+    <CheckBox
+        android:id="@+id/item_check_popwindow_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/select_check_popwindow_fragment"
+        />
+
+    <TextView
+        android:id="@+id/item_check_popwindow_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/gray_5"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_check_popwindow_checkbox"
+        android:text="会吵架"/>
+    </RelativeLayout>
+    
+</RelativeLayout>

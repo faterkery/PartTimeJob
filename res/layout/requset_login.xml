@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+    
+    <ImageView
+        android:id="@+id/request_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/request_login"/>
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_alignBottom="@+id/request_imageview"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp"
+        android:text="取消"
+        />
+         
+     <Button
+         android:id="@+id/gotoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@null"
+         android:textColor="@color/qianblue"
+         android:layout_alignRight="@+id/request_imageview"
+         android:layout_alignBottom="@+id/request_imageview"
+         android:layout_marginRight="40dp"
+         android:textSize="20sp"
+         android:text="马上登陆"
+        />
+</RelativeLayout>

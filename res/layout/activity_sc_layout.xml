@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:id="@+id/tebieguanzhu_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/about_us_return_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/mylogin_icon_back_nor" />
+
+        <ImageButton
+            android:id="@+id/mycreadit_return_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我的收藏"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/tebieguanzhu_imageview01"
+        android:layout_below="@+id/tebieguanzhu_rey01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/selected_search_button"
+        />
+    <ListView
+        android:id="@+id/gz_listview"
+        android:layout_below="@+id/tebieguanzhu_imageview01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rey"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/shop_image"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/jianzhi1" />
+
+    <TextView
+        android:id="@+id/tv_contact_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:text="招聘淘宝头条手写"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_contact_item_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:text="实习生"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_contact_item_pay_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_contact_item_people"
+        android:text="月结"
+        android:textColor="#448aca" />
+
+    <ImageView
+        android:id="@+id/tv_address_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_people"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:src="@drawable/defult_icon_locatio_msg" />
+
+    <TextView
+        android:id="@+id/tv_address_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_people"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_address_icon"
+        android:text="浙江舟山定海中大街21号"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/tv_data_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:src="@drawable/defult_icon_time_nor" />
+
+    <TextView
+        android:id="@+id/tv_data_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address_icon"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_data_icon"
+        android:text="2016-11-27至2017-02-27"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <CheckBox
+        android:id="@+id/item_sc_radiobutton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:button="@drawable/selected_radiobutton_xing"/>
+      
+</RelativeLayout>

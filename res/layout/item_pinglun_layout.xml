@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/item_pinglun_imageview"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="#448aca" />
+
+        <TextView
+            android:id="@+id/item_pinglun_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_pinglun_imageview"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/item_pinglun_imageview"
+            android:text="陈老师"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_pinglun_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_pinglun_name"
+            android:layout_below="@+id/item_pinglun_name"
+            android:text="2016-10-27"
+            android:textColor="#bcbcbc"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/item_pinglun_textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="好评!!"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/item_pinglun_rey01"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+           android:layout_below="@+id/item_pinglun_gridview"
+            >
+            <TextView
+                android:id="@+id/item_pinglun_textview02"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="10sp"
+                android:text="游览(12)"/>
+            <TextView
+                android:id="@+id/item_pinglun_textview03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有用(3)"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+        <GridView
+            android:id="@+id/item_pinglun_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/item_pinglun_textview01"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="10dp"
+            android:columnWidth="90dp"
+            android:horizontalSpacing="15dp"
+            android:numColumns="4"
+            android:verticalSpacing="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

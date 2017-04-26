@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/messet_back_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/messet_tab_back_nor" />
+
+        <TextView
+            android:id="@+id/messet_back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38dp"
+            android:text="返回"
+            android:textColor="#bbbbbb" />
+
+        <TextView
+            android:id="@+id/messet_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="聊天设置" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/gray_1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f0f0f0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/messet_img_userblack_nor" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <ImageView
+            android:id="@+id/messet_user_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/messet_img_user_nor" />
+
+        <LinearLayout
+            android:id="@+id/messet_user_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/messet_user_img"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/messet_username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="陈老师"
+                android:textColor="#6d6d6d"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/messet_useraddress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="浙江海洋大学东海科学技术学院"
+                android:textColor="#6d6d6d"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/messet_usergo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/messet_img_usergo_nor" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/gray_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/messet_img_usergo_nor" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_message_person_liantian"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="聊天记录"
+            android:textColor="@color/gray_8"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#bcbcbc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/messet_img_usergo_nor" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_message_person_liantian"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="举报"
+            android:textColor="@color/gray_8"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp" >
+
+        <ImageButton
+            android:id="@+id/message_person_exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/select_message_person_qxbm" />
+    </RelativeLayout>
+
+</LinearLayout>

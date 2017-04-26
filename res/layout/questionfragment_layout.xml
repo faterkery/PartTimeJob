@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_topic01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/questionfragment_topic01_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="4dp"
+            android:text="问:遇到顾客恶意差评，您的解决流程是什么？"
+            android:textColor="@color/qianblue"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/questionfragment_topic01_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/questionfragment_topic01_textview"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/questionfragment_topic01_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@null"
+                android:hint="请写下自己的答案，以供雇主参考"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/reyout__topic01_rey00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/topic01_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/reyout_topic01_textview01"
+                android:background="@drawable/select_popwindow_next_button"
+                android:text="下一步"
+                android:textColor="@color/select_jobxq_popwindow_text" />
+            <TextView
+                android:id="@+id/reyout_topic01_textview01"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reyout_topic01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/popwin_topic01_confirm_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_above="@+id/reyout_topic01_textview02"
+                android:background="@drawable/select_popwindow_next_button" 
+                 android:text="确 定"
+                android:textColor="@color/select_jobxq_popwindow_text"/>
+             <TextView
+                android:id="@+id/reyout_topic01_textview02"
+                android:layout_width="match_parent"
+                 android:layout_alignParentBottom="true"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_topic02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/questionfragment_topic02_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="4dp"
+            android:text="问:遇到顾客恶意差评，您的解决流程是什么？"
+            android:textColor="@color/qianblue"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/questionfragment_topic02_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/questionfragment_topic02_textview" >
+
+            <ListView
+                android:id="@+id/questionfragment_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:lineSpacingExtra="7dp"
+                 />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/reyout__topic02_rey00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+             android:visibility="gone"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/topic02_button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/select_popwindow_next_button"
+                android:text="下一步"
+                android:layout_above="@+id/reyout_topic02_textview01"
+                android:textColor="@color/select_jobxq_popwindow_text" />
+            <TextView
+                android:id="@+id/reyout_topic02_textview01"
+                 android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reyout_topic02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/popwin_topic02_confirm_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_above="@+id/reyout_topic02_textview02"
+                android:background="@drawable/select_popwindow_next_button" 
+                 android:text="确 定"
+                android:textColor="@color/select_jobxq_popwindow_text" />
+            <TextView
+                 android:layout_alignParentBottom="true"
+                android:id="@+id/reyout_topic02_textview02"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

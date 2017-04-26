@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"     
+    tools:context=".YingLianFragment" >
+
+    <RelativeLayout
+       android:id="@+id/ying_lian_fragment_rey01"
+       android:layout_width="match_parent"
+       android:layout_height="32dp"
+       android:background="@color/white"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="提现账号:"
+           android:layout_marginLeft="20dp"
+            android:textSize="13sp"
+           android:layout_centerVertical="true"/>
+       <Button
+           android:id="@+id/ying_lian_fragment_button_add"
+           android:layout_width="80dp"
+           android:layout_height="match_parent"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/select_button_click"
+           android:text="添加账号"
+           android:textColor="@color/qianblue"
+           android:textSize="13sp"
+           />
+   </RelativeLayout>
+
+    <TextView
+       android:id="@+id/ying_lian_fragment_textview01"
+       android:layout_below="@+id/ying_lian_fragment_rey01"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/gray_1"/>
+    <ListView
+         android:id="@+id/ying_lian_fragment_listview"
+         android:layout_below="@+id/ying_lian_fragment_textview01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

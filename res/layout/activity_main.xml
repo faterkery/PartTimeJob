@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical">  
+    <include 
+        android:id="@+id/main_head"
+        android:visibility="gone"
+        layout="@layout/include_head" />
+    <FrameLayout
+        android:id="@+id/mainfragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+    </FrameLayout>
+    <include 
+        layout="@layout/include_bottom"/>  
+</LinearLayout>  

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sfrz_rey02_textview01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textSize="18sp"
+        android:text="身份征" />
+
+    <RelativeLayout
+        android:id="@+id/sfrz_rey02_reylayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sfrz_rey02_textview01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/sfrz_rey02_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名 " />
+
+        <TextView
+            android:id="@+id/sfrz_rey02_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/sfrz_rey02_txt1"
+            android:text="张嘉佳" />
+
+        <TextView
+            android:id="@+id/sfrz_rey02_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/sfrz_rey02_txt2"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/sfrz_rey02_txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/sfrz_rey02_txt3"
+            android:text="男" />
+
+        <TextView
+            android:id="@+id/sfrz_rey02_txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sfrz_rey02_txt1"
+            android:layout_marginTop="10dp"
+            android:text="身份证号" />
+
+        <TextView
+            android:id="@+id/sfrz_rey02_txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sfrz_rey02_txt1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/sfrz_rey02_txt5"
+            android:text="330224199711039829" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sfrz_rey02_textview02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sfrz_rey02_reylayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="正在严格的审核"
+        android:textColor="#999999"
+         />
+
+    <TextView
+        android:id="@+id/sfrz_rey02_txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sfrz_rey02_reylayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="信 息 出 错"
+        android:visibility="gone"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/sfrz_rey02_txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sfrz_rey02_txt7"
+        android:text="身份证号码有误"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:layout_marginTop="7dp"
+         android:layout_centerHorizontal="true"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/sfrz_imagebutton_resubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sfrz_rey02_txt8"
+        android:src="@drawable/selected_sfrz_button_cxrz"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="7dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sfrz_rey02_textview02"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sfrz_rey02_reylayout_01"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

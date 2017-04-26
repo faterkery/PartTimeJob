@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bmcg_pic_bg_nor" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/popwin_confirm_iamgeview"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/bmcg_pic_tx_nor" />
+
+            <TextView
+                android:id="@+id/popwin_confirm_textview01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popwin_confirm_iamgeview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/popwin_confirm_textview02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popwin_confirm_textview01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/popwin_confirm_textview03"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/popwin_confirm_textview02"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/gray_5" />
+
+            <TextView
+                android:id="@+id/popwin_confirm_textview04"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/popwin_confirm_textview03" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/popwin_confirm_textview04" />
+        </RelativeLayout>
+
+</RelativeLayout>

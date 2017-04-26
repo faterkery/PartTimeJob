@@ -1,0 +1,80 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+     >
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/gray_4"
+         />
+     <RadioGroup 
+         android:id="@+id/group1"
+         android:orientation="horizontal"
+         android:paddingTop="7dp"
+         android:paddingBottom="7dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <RadioButton 
+             android:id="@+id/radio1"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:button="@null"
+             android:drawableTop="@drawable/select_new_selected"
+             android:drawablePadding="5dp"
+             android:text="@string/news"
+             android:checked="true"
+             android:textSize="13sp"
+             android:textColor="@drawable/seclect_text_color"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <RadioButton 
+             android:id="@+id/radio2"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:button="@null"
+             android:drawableTop="@drawable/select_space_selected"
+             android:text="@string/paper"
+             android:drawablePadding="5dp"
+             android:textSize="13sp"
+             android:textColor="@drawable/seclect_text_color"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <RadioButton 
+             android:id="@+id/radio3"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:button="@null"
+             android:drawablePadding="5dp"
+             android:text="@string/message"
+             android:textSize="13sp"
+              android:textColor="@drawable/seclect_text_color"
+             android:drawableTop="@drawable/select_message_selected"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <RadioButton 
+             android:id="@+id/radio4"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:button="@null"
+             android:drawablePadding="5dp"
+             android:text="@string/my"
+             android:textSize="13sp"
+              android:textColor="@drawable/seclect_text_color"
+             android:drawableTop="@drawable/select_people_selected"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+          
+     </RadioGroup>
+
+     
+
+</RelativeLayout>
+</LinearLayout>

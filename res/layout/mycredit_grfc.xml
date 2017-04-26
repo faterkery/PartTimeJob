@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/mycredit_grfc_imagebutton_deleImg"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="18dp"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/mycredit_grfc_textview"
+        android:src="@drawable/myjlxx_icon_shanchu_nor"/>
+    <Button
+        android:id="@+id/mycredit_grfc_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:textSize="16sp"
+        android:textColor="#448aca"
+        android:background="@null"
+        android:text="编辑"/>
+
+    <GridView
+        android:id="@+id/lv_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_below="@+id/mycredit_grfc_textview"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentLeft="true"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="15dp"
+        android:numColumns="4"
+        android:verticalSpacing="15dp" >
+    </GridView>
+
+    
+    </RelativeLayout>
+</RelativeLayout>

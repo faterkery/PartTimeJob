@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<set xmlns:android="http://schemas.android.com/apk/res/android" >  
+  
+    <!-- 定义从左向右进入的动画 -->  
+    <translate  
+        android:duration="500"  
+        android:fromXDelta="300"  
+        android:toXDelta="200"
+        android:fromYDelta="20"
+        android:toYDelta="20" />  
+  
+</set>  

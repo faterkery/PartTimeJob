@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!--spinner未展开的文字显示布局，这里边id必须是  android:id="@android:id/text1"，-->  
+    <!--因为源代码中spinner的textView的id就是这个，如果不这样设置，无法改变spinner的样式-->  
+<TextView  
+    android:id="@android:id/text1"  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="center"  
+    android:singleLine="true"  
+    android:textColor="@color/black"  
+    android:textSize="14dp"  
+    />  

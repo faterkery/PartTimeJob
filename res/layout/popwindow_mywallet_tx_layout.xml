@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mywallet_wdqb_tixianditu" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/popwindow_mywallet_tx_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="请输入钱包密码" />
+
+        <com.clv.parttimejobs.view.ui.customview.PassWordEditRectTextView
+            android:id="@+id/popwindow_mywallet_tx_PassWordEditRectTextView"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/popwindow_mywallet_tx_textview"
+            android:focusable="true"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:maxLength="6" />
+    </RelativeLayout>
+
+</RelativeLayout>

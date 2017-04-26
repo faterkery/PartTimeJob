@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sendtime_my_yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textColor="#bfbfbf"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_userhead_my_yuyin"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_username_my_yuyin"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/mes2_img_person2_nor"
+            android:focusable="false" />
+
+        <FrameLayout
+            android:id="@+id/recorder_length_my_yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:focusableInTouchMode="false"
+            android:layout_toLeftOf="@+id/iv_userhead_my_yuyin"
+            android:background="@drawable/chatto_bg_focused" >
+
+            <TextView
+            android:id="@+id/tv_time_my_yuyin_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/id_recorder_anim_my_yuyin"
+            android:layout_alignTop="@+id/iv_userhead_my_yuyin"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginRight="21dp"
+             android:layout_gravity="center_vertical|right"
+             android:singleLine="true"
+             android:textSize="12sp"
+            android:text="16''"
+            android:textColor="@color/gray_8"
+            />
+            
+            <View
+                android:id="@+id/id_recorder_anim_my_yuyin"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|right"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/adj" />
+        </FrameLayout>
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

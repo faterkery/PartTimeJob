@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/defult_icon_cue_nor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_textview_1"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/defult_icon_cue_nor"
+        android:gravity="center"
+        android:text="待录取"
+        android:textColor="@color/white"
+        android:textSize="9sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/head_textview_1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="9dp"
+        android:text="投诉"
+        android:textColor="@color/gray_8"
+        android:textSize="9sp" />
+
+    <ImageView
+        android:id="@+id/shop_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/defult_icon_cue_nor"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/jianzhi1" />
+
+    <TextView
+        android:id="@+id/tv_contact_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/defult_icon_cue_nor"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:text="招聘淘宝头条手写"
+        android:textColor="#333333"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_contact_item_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_name"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:text="实习生"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_contact_item_pay_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_contact_item_people"
+        android:text="月结"
+        android:textColor="#448aca" />
+
+    <ImageView
+        android:id="@+id/tv_address_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_people"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:src="@drawable/defult_icon_locatio_msg" />
+
+    <TextView
+        android:id="@+id/tv_address_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_item_people"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_address_icon"
+        android:text="浙江舟山定海中大街21号"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/tv_data_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/shop_image"
+        android:src="@drawable/defult_icon_time_nor" />
+
+    <TextView
+        android:id="@+id/dsh_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address_icon"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_data_icon"
+        android:text="2016-11-27至2017-02-27"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_money_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_contact_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="3dp"
+        android:text="13元/时"
+        android:textColor="#fbca60"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_money_contact"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tv_tuijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_icon_tuijian_nor" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/tv_bao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/home_icon_moneydown_nor" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/tv_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_icon_comp_nor" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/tv_ya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_icon_yajin_nor" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/tv_guan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/home_icon_officalsure_nar" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_bottom_textview_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dsh_list_date"
+        android:layout_marginTop="6dp"
+        android:background="@color/gray_1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/item_bottom_textview_1"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:text="联系商家"
+        android:textColor="@color/qianblue"
+        android:textSize="13sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_bottom_textview_1"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:text="撤销报名"
+        android:textColor="@color/gray_7"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/item_bottom_linearlayout"
+        android:background="@color/gray_1" />
+
+    <Button
+        android:id="@+id/dsh_button_to"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@null" />
+
+</RelativeLayout>

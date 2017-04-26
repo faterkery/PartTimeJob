@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/ivchatset_rey01"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/messet_img_yes_nor" >
+
+        <TextView
+            android:id="@+id/ivchatset_textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="若退出群聊则会删除与此群聊的相关信息"
+            android:textColor="@color/gray_5"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivchatset_textview01"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/select_button_click"
+            android:text="确认"
+            android:textColor="@color/red"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivchatset_rey01"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/messet_img_no_nor" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/select_button_click"
+            android:text="取消"
+            android:textColor="@color/qianblue" />
+    </RelativeLayout>
+
+</RelativeLayout>

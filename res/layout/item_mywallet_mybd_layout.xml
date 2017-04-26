@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/white"
+     >
+     <TextView
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="52dp"
+         />
+     <ImageView
+         android:id="@+id/item_mywallet_mybd_imageview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/tixian_nongyeyinh"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="17dp"
+         />
+     <TextView
+         android:id="@+id/item_mywallet_mybd_textview_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="12sp"
+         android:layout_centerVertical="true"
+         android:textColor="#6d6d6d"
+         android:layout_marginLeft="15dp"
+         android:layout_toRightOf="@+id/item_mywallet_mybd_imageview"
+         android:text="中国农业银行"
+         />
+     
+     <TextView
+         android:id="@+id/item_mywallet_mybd_textview_sfzno"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="12sp"
+         android:layout_centerVertical="true"
+         android:textColor="#6d6d6d"
+         android:layout_marginLeft="15dp"
+         android:layout_toRightOf="@+id/item_mywallet_mybd_textview_name"
+         android:text="**********5573"
+         />
+     
+</RelativeLayout>

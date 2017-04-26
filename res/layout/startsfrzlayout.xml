@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/mysfyz_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/mysfyz_rey01"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/about_us_return_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/mylogin_icon_back_nor" />
+
+                <ImageButton
+                    android:id="@+id/mycreadit_return_button"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="身份认证"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mysfyz_rey02"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_below="@+id/mysfyz_rey01"
+                android:background="#ececec" >
+
+                <ImageView
+                    android:id="@+id/mysfyz_imageview02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/myidcard_pic_one_set" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mysfyz_lin01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mysfyz_rey02"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

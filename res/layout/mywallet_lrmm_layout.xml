@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_lrmm_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+         >
+
+        <ImageView
+            android:id="@+id/about_us_return_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mylogin_icon_back_nor" />
+
+        <ImageButton
+            android:id="@+id/mycreadit_return_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="录入密码"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mymywallet_lrmm_rey01"
+        android:background="#dcdcdc" />
+
+    <TextView
+        android:id="@+id/mymywallet_lrmm_text_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mymywallet_lrmm_rey01"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="62dp"
+        android:text="请输入6位数字密码:"
+        android:textColor="@color/qianblue"
+        android:textSize="16sp" />
+
+    <com.clv.parttimejobs.view.ui.customview.PassWordEditTextView
+        android:id="@+id/mymywallet_lrmm_edittext_input_1"
+        android:layout_width="183dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:maxLength = "6"
+        android:layout_below="@+id/mymywallet_lrmm_text_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/mymywallet_lrmm_text_input_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mymywallet_lrmm_edittext_input_1"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="30dp"
+        android:text="请确认密码:"
+        android:textColor="@color/qianblue"
+        android:textSize="16sp" />
+
+    <com.clv.parttimejobs.view.ui.customview.PassWordEditTextView
+        android:id="@+id/mymywallet_lrmm_edittext_input_2"
+        android:layout_width="183dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:maxLength = "6"
+        android:layout_below="@+id/mymywallet_lrmm_text_input_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/mymywallet_lrmm_textview_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mymywallet_lrmm_edittext_input_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="!密码不相符合"
+        android:textColor="@color/qianblue" />
+
+    <ImageButton
+        android:id="@+id/mymywallet_lrmm_imagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mymywallet_lrmm_textview_wrong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:src="@drawable/myawlt_bar_jinru_set" />
+
+</RelativeLayout>

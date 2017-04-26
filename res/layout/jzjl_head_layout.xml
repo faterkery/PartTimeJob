@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <RelativeLayout
+        android:background="@drawable/defult_icon_background_nor"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+    <RelativeLayout
+                android:id="@+id/mycredit_rey01"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/about_us_return_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/mylogin_icon_back_nor" />
+
+                <ImageButton
+                    android:id="@+id/mycreadit_return_button"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="兼职经历"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/myjzjl_pic_zhyuan_nor"
+        />
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+                <TextView
+                    android:id="@+id/jzjl_text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总收入"
+                    android:textSize="15sp"
+                    android:textColor="#333333"/>
+                <TextView
+                    android:layout_below="@+id/jzjl_text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1200"
+                    android:layout_marginTop="8dp"
+                    android:textSize="19sp"
+                    android:textColor="#fbca60"/>
+    </RelativeLayout>
+   </RelativeLayout>
+</LinearLayout>

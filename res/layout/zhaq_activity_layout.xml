@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="0dp"
+    tools:context=".ZHAQ_activity" >
+
+    <RelativeLayout
+        android:id="@+id/sz_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+
+        <ImageButton
+            android:id="@+id/sz_return_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/myset_icon_back_nor"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="账号安全"
+            android:textSize="18sp" />
+    </RelativeLayout>
+<TextView
+        android:id="@+id/sz_textview01"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/sz_rey01"
+        android:background="#dcdcdc" />
+    <RelativeLayout
+        android:id="@+id/sz_rey02"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/sz_textview01" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_button_press" />
+
+        <TextView
+            android:id="@+id/sz_textview02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="修改手机 :"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/sz_textview02"
+            android:textSize="10dp"
+            android:text="17858801122"/>
+        <Button
+            android:id="@+id/zhaq_button_1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="更换绑定"
+            android:textColor="#448aca"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:background="@null"/>
+        <Button
+            android:id="@+id/sz_button01"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button_press" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/sz_textview03"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/sz_rey02"
+        android:background="#dcdcdc" />
+    
+    <RelativeLayout
+        android:id="@+id/sz_rey03"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/sz_textview03" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_button_press" />
+
+        <TextView
+            android:id="@+id/sz_textview04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="绑定邮箱 :"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/sz_textview04"
+            android:textSize="10dp"
+            android:text="1109874433@qq.com"/>
+        <Button
+             android:id="@+id/zhaq_button_2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="更换绑定"
+            android:textColor="#448aca"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:background="@null"/>
+        <Button
+            android:id="@+id/sz_button02"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button_press" />
+    </RelativeLayout>
+</RelativeLayout>

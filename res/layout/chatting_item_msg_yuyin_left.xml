@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sendtime_yuyin"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_userhead_yuyin"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/messet_img_user_nor"
+             />
+
+        <FrameLayout
+            android:id="@+id/recorder_length_yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_userhead_yuyin"
+            android:background="@drawable/chatto_rbg_focused" >
+
+            <TextView
+            android:id="@+id/tv_time_yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_recorder_anim_yuyin"
+            android:layout_alignTop="@+id/iv_userhead_yuyin"
+            android:text="15”"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="23dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#ff000000"
+             />
+            <View
+                android:id="@+id/id_recorder_anim_yuyin"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                
+                android:background="@drawable/r_adj" />
+        </FrameLayout>
+
+        
+
+        <TextView
+            android:id="@+id/tv_username_yuyin"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/iv_userhead"
+            android:text="SSXXXXX"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

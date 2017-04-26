@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_6" />
+
+    <RadioGroup
+        android:id="@+id/part_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/part_radio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_orader_button_click"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/select_order_button_text"
+            android:text="待审核" />
+
+        <RadioButton
+            android:id="@+id/part_radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_orader_button_click"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/select_order_button_text"
+            android:text="已录取" />
+
+        <RadioButton
+            android:id="@+id/part_radio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/select_order_button_text"
+            android:background="@drawable/select_orader_button_click"
+            android:text="待结算" />
+
+        <RadioButton
+            android:id="@+id/part_radio_4"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/select_order_button_text"
+            android:background="@drawable/select_orader_button_click"
+            android:text="待评论" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/gray_1" />
+
+    <FrameLayout
+        android:id="@+id/partjob"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/sfrz_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/mysfrz_rey01"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/about_us_return_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/mylogin_icon_back_nor" />
+
+                <ImageButton
+                    android:id="@+id/mycreadit_return_button"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="身份认证"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/mysfrz_image01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mysfrz_rey01"
+                android:background="@drawable/sfrz_1" />
+
+            <ImageView
+                android:id="@+id/mysfrz_image02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mysfrz_image01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/myidcard_pic_medium_nor" />
+
+            <ImageButton
+                android:id="@+id/mysfrz_image03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mysfrz_image02"
+                android:layout_marginTop="40dp"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selected_button_start" />
+            <TextView
+                android:layout_below="@+id/mysfrz_image03"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

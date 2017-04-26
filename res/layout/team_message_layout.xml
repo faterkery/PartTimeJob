@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/team_message_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        >
+
+        <ImageButton
+            android:id="@+id/team_message_imageview_1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+             android:layout_marginLeft="20dp"
+            android:src="@drawable/messet_tab_back_nor"  />
+        <TextView
+            android:id="@+id/team_message_textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_centerVertical="true"
+            android:text="消息("
+            android:textColor="@color/gray_4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/team_message_textview_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/team_message_textview_1"
+            android:text="1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/team_message_textview_2"
+            android:text=")"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/team_message_textname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:focusable="true"  
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="true"  
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/message_toset_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:src="@drawable/mes3_button_users_nor" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xian2"
+        android:layout_above="@+id/team_message_rey02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_1"/>
+    <RelativeLayout
+        android:id="@+id/team_message_rey02"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="3dp" >
+
+        <ImageButton
+            android:id="@+id/team_message_image01_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select_message_sound_button" />
+
+        <EditText
+            android:id="@+id/team_message_image02_text"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+             />
+
+        <Button
+            android:id="@+id/team_message_image03_text_qd"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:text="发送" />
+
+        <ImageButton
+            android:id="@+id/team_message_image01_yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:background="@null"
+            android:visibility="gone"
+            android:src="@drawable/select_chatting_button_text"
+             />
+
+        <ImageButton
+            android:id="@+id/team_message_image03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="9dp"
+            android:visibility="gone"
+            android:src="@drawable/seclect_message_button_sendph_nor"
+            />
+
+        <com.clv.parttimejobs.view.ui.customview.AudioRecordButton
+            android:id="@+id/recordButton"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:minHeight="0dp"
+            android:padding="5dp"
+            android:text="按住 说话"
+            android:background="@drawable/button_recordnormal"
+            android:visibility="gone"
+            android:textColor="#727272" >
+        </com.clv.parttimejobs.view.ui.customview.AudioRecordButton>
+    </RelativeLayout>
+    
+    <ListView
+            android:layout_below="@+id/team_message_rey01"
+            android:id="@+id/team_message_listview"
+            android:layout_above="@+id/xian2"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</RelativeLayout>

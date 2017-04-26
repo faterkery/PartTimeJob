@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+    android:layout_height="78dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="78dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mywheelview_bigimg"
+            />
+        <LinearLayout
+            android:id="@+id/wheel_lay01"
+            android:background="@drawable/timechange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" >
+
+            <com.clv.parttimejobs.view.ui.customview.WheelView
+                android:id="@+id/main_wv"
+                android:layout_width="58dp"
+                android:layout_height="38dp" />
+        </LinearLayout>
+        
+        <TextView
+            android:layout_toRightOf="@+id/wheel_lay01"
+            android:id="@+id/wheel_textview01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+        
+         <LinearLayout
+             android:id="@+id/wheel_lay02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/timechange"
+            android:layout_toRightOf="@+id/wheel_textview01"
+            android:layout_marginLeft="8dp" >
+
+            <com.clv.parttimejobs.view.ui.customview.WheelView
+                android:id="@+id/wheelview2"
+                android:layout_width="58dp"
+                android:layout_height="38dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/wheelview_edit01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="编辑"
+            android:textColor="#ececec"
+            android:paddingLeft="13dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:singleLine="true"  
+            android:ems="10"  
+            android:background="@drawable/mywheelview_editview"
+            android:layout_toRightOf="@+id/wheel_lay02"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            />
+        <ImageButton
+            android:id="@+id/imagebutton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/xcap_detele"/>
+    </RelativeLayout>
+
+</LinearLayout>

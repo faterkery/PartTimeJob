@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:background="@color/tianlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <RelativeLayout
+            android:id="@+id/item_meessage_person_reyout"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+             >
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/item_message_image1"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/mes_img_person_nor" >
+            </ImageView>
+            <TextView
+                android:id="@+id/item_message_text1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/item_message_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="陈老师"
+                />
+            <TextView
+                android:id="@+id/item_message_text2"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/item_message_image1"
+                android:layout_below="@+id/item_message_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/gray_7"
+                android:text="下礼拜都没有空"/>
+            <com.clv.parttimejobs.view.ui.customview.DragPointView
+                android:id="@+id/dragview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="99+"
+                android:textSize="10sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+           
+        </LinearLayout>
+        
+
+
+</RelativeLayout>

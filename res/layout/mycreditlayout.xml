@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.clv.parttimejobs.view.ui.customview.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ScrollView
+        android:id="@+id/school_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_1"
+            android:padding="0dp" >
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey01"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/about_us_return_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/mylogin_icon_back_nor" />
+
+                <ImageButton
+                    android:id="@+id/mycreadit_return_button"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="信用生活"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey02"
+                android:layout_width="360dp"
+                android:layout_height="156dp"
+                android:layout_below="@+id/mycredit_rey01" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/myxy_pic_beij_nor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="五星级用户"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey03"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/mycredit_rey02"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/mycredit_ImageView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/myxy_bar_blue_nor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@+id/mycredit_ImageView01"
+                    android:text="信用认证"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mycredit_lay01"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/mycredit_rey03"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/gray_1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey04"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/mycredit_lay01"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="芝麻信用分:"
+                    android:textColor="@color/gray_8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/mycredit_TextView02"
+                    android:text="暂无" />
+
+                <ImageButton
+                    android:id="@+id/mycredit_TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/mycredit_TextView03"
+                    android:background="@null"
+                    android:src="@drawable/myxy_bar_sq_nor" >
+                </ImageButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey05"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/mycredit_rey04"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/mycredit_ImageView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/myxy_bar_blue_nor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@+id/mycredit_ImageView02"
+                    android:text="平台信用"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mycredit_lay02"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/mycredit_rey05"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView05"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/gray_1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey06"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_below="@+id/mycredit_lay02"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="兼职经历:"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/mycredit_TextView06"
+                     />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mycredit_lay03"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/mycredit_rey06"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView08"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/gray_1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey07"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_below="@+id/mycredit_lay03"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="兼职评分:"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mycredit_lay04"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/mycredit_rey07"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/gray_1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mycredit_lay04"
+                android:background="@color/white"
+                android:paddingBottom="12dp" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="10dp"
+                    android:text="工作态度"
+                    android:textColor="@color/gray_7"
+                    android:textSize="14sp" />
+
+                <RatingBar
+                    android:id="@+id/room_ratingbar"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/mycredit_TextView11"
+                    android:numStars="5"
+                    android:rating="4" >
+                </RatingBar>
+
+                <TextView
+                    android:id="@+id/mycredit_TextView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/room_ratingbar"
+                    android:text="5.0" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mycredit_TextView11"
+                    android:layout_below="@+id/mycredit_TextView11"
+                    android:layout_marginTop="7dp"
+                    android:text="工作效率"
+                    android:textColor="@color/gray_7"
+                    android:textSize="14sp" />
+
+                <RatingBar
+                    android:id="@+id/room_ratingbar_2"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/mycredit_TextView13"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/mycredit_TextView13"
+                    android:numStars="5"
+                    android:rating="4" >
+                </RatingBar>
+
+                <TextView
+                    android:id="@+id/mycredit_TextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/mycredit_TextView13"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/room_ratingbar_2"
+                    android:text="5.0" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mycredit_TextView13"
+                    android:layout_below="@+id/mycredit_TextView13"
+                    android:layout_marginTop="7dp"
+                    android:text="工作信用"
+                    android:textColor="@color/gray_7"
+                    android:textSize="14sp" />
+
+                <RatingBar
+                    android:id="@+id/room_ratingbar_3"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/mycredit_TextView15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/mycredit_TextView15"
+                    android:numStars="5"
+                    android:rating="4" >
+                </RatingBar>
+
+                <TextView
+                    android:id="@+id/mycredit_TextView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/mycredit_TextView15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/room_ratingbar_3"
+                    android:text="5.0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycredit_rey09"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/mycredit_rey08"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/mycredit_ImageView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/myxy_bar_blue_nor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@+id/mycredit_ImageView03"
+                    android:text="校园信用"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mycredit_lay05"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/mycredit_rey09"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/gray_1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mycredit_lay05"
+                android:padding="12dp" >
+
+                <TextView
+                    android:id="@+id/mycredit_TextView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="考试诚信"
+                    android:textColor="@color/gray_7"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="无作弊"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mycredit_TextView18"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="论文诚信"
+                    android:textColor="@color/gray_7" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycredit_TextView20"
+                    android:text="无作弊"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mycredit_TextView20"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="活动参与"
+                    android:textColor="@color/gray_7" />
+
+                <TextView
+                    android:id="@+id/mycredit_TextView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycredit_TextView22"
+                    android:text="积极"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</com.clv.parttimejobs.view.ui.customview.SildingFinishLayout>

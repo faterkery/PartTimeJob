@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/sfrz_rey02_textview01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会计征"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        />
+
+    <ImageButton
+        android:id="@+id/sfrz_rey02_imagebutton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sfrz_rey02_textview01"
+        android:src="@drawable/myidcard_pic_putinpic_nor"/>
+    <ImageButton
+        android:id="@+id/sfrz_rey02_imagebutton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_below="@+id/sfrz_rey02_imagebutton01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/myidcard_pic_putinpicover_nor"/>
+    
+    <TextView
+        android:id="@+id/sfrz_rey02_textview02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在严格的审核"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/sfrz_rey02_imagebutton02"
+        android:layout_centerHorizontal="true"
+        android:textColor="#999999"	/>
+    <TextView
+        android:layout_below="@+id/sfrz_rey02_textview02"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+</RelativeLayout>

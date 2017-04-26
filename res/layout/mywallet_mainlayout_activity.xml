@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/mymywallet_mainlayout_scrollview"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_1" >
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_mainlayout_rey01"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#ffffff"
+                 >
+
+                <ImageView
+                    android:id="@+id/mymywallet_mainlayout_return_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mylogin_icon_back_nor" />
+
+                <ImageButton
+                    android:id="@+id/mymywallet_mainlayout_return_button"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="我的钱包"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_mainlayout_rey02"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@+id/mymywallet_mainlayout_rey01"
+                android:background="@drawable/mywallt_pic_beij_nor" >
+
+                <TextView
+                    android:id="@+id/mymywallet_mainlayout_text_moneycount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="¥100.99"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mymywallet_mainlayout_textview01"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/mymywallet_mainlayout_rey02"
+                android:background="@color/gray_1" />
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_mainlayout_rey03"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:layout_below="@+id/mymywallet_mainlayout_textview01" >
+
+                <Button
+                    android:id="@+id/mywallet_chongzhi_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_button_click"
+                    android:layout_marginLeft="10dp"
+                    android:text="充值"
+                    android:textColor="@color/qianblue" />
+
+                <Button
+                    android:id="@+id/mywallet_tixian_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/select_button_click"
+                    android:layout_marginRight="10dp"
+                    android:text="提现"
+                    android:textColor="@color/gray_8" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mymywallet_mainlayout_textview02"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/mymywallet_mainlayout_rey03"
+                android:background="@color/gray_1" />
+
+            <RelativeLayout
+                android:id="@+id/mymywallet_mainlayout_rey04"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:background="@color/white"
+                android:layout_below="@+id/mymywallet_mainlayout_textview02" >
+
+                <Button
+                    android:id="@+id/mymywallet_mainlayout_rey04_button_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_button_click" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="我的绑定"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mymywallet_mainlayout_rey04_imagebutton01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/myset_icon_more_nor" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/mymywallet_mainlayout_textview03"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/mymywallet_mainlayout_rey04"
+                android:background="@color/gray_1" />
+             <RelativeLayout
+                android:id="@+id/mymywallet_mainlayout_rey05"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:background="@color/white"
+                android:layout_below="@+id/mymywallet_mainlayout_textview03" >
+
+                <Button
+                    android:id="@+id/mymywallet_mainlayout_rey05_button_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_button_click" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="提现进度"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mymywallet_mainlayout_rey05_imagebutton01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/myset_icon_more_nor" />
+            </RelativeLayout>
+             <TextView
+                android:id="@+id/mymywallet_mainlayout_textview04"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/mymywallet_mainlayout_rey05"
+                android:background="@color/gray_1" />
+             <RelativeLayout
+                android:id="@+id/mymywallet_mainlayout_rey06"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:background="@color/white"
+                android:layout_below="@+id/mymywallet_mainlayout_textview04" >
+
+                <Button
+                    android:id="@+id/mymywallet_mainlayout_rey06_button_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_button_click" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="转账明细"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mymywallet_mainlayout_rey06_imagebutton01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/myset_icon_more_nor" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

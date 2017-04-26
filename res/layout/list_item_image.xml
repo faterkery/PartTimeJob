@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/iv_image_item_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_launcher" />
+    
+    <ImageButton
+        android:id="@+id/iv_image_item_select"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:visibility="gone"
+        android:contentDescription="@null"
+        android:src="@drawable/myjlxx_icon_xztp_nor" />
+
+</RelativeLayout>

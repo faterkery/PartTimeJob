@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+
+    <RelativeLayout
+        android:id="@+id/sousuo_rey_01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/sousuo_imageview_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/defult_icon_search_nor"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        >
+    </ImageView>
+    <TextView
+        android:id="@+id/sousuo_histroy_text"
+        android:layout_marginTop="20dp"
+         android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/sousuo_imageview_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="淘宝招收代理手写"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/sousuo_rey_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_1"/>
+</RelativeLayout>

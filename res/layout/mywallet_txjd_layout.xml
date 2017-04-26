@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/mymywallet_txjd_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/mymywallet_txjd_return_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mylogin_icon_back_nor" />
+
+        <ImageButton
+            android:id="@+id/mymywallet_txjd_return_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="提现进度"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mymywallet_txjd_textview01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_1"
+        android:layout_below="@+id/mymywallet_txjd_rey01"/>
+    <ExpandableListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mymywallet_txjd_textview01"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:childDivider="#ffffff"
+        android:divider="#f3f3f3"
+        android:dividerHeight="6dp"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+
+</RelativeLayout>

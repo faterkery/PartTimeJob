@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/partjob_imageview07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/parttime_juxing" />
+
+    <TextView
+        android:id="@+id/partjob_textview21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/partjob_imageview07"
+        android:text="特殊要求"
+        android:textColor="#448aca" />
+
+    <TextView
+        android:id="@+id/partjob_textview22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/partjob_textview21"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:text="1.年龄在16-30岁之间。\n2.女性。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_below="@+id/partjob_textview22" />
+
+</RelativeLayout>

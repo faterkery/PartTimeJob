@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clv.homework"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="19" />
+
+    <!-- 申请必要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />  <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />        <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />   <!-- 自动聚焦权限 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/denglu_pic_haidao_nor"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.clv.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f14cda24382f496a91021e85ee3297cc" />
+        <!-- 声明定位service -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+
+        <activity
+            android:name="com.clv.parttimejobs.activity.loadlayout.CLV_gzs_image"
+            android:label="@string/title_activity_clv_gzs_image" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         
+        <!-- 隐藏键盘 --><!-- 全屏 -->
+        <activity
+            android:configChanges="orientation|keyboardHidden"    
+            android:name="com.clv.parttimejobs.thirdparty.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"    
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.thirdparty.zxing.activity.WebViewAcitvity"
+            >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.leadlayout.CLV__weclome_fragment"
+            android:label="@string/title_activity_clv__weclome_fragment" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.mainlayout.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.mainlayout.News_gesture_layout"
+            android:label="@string/title_activity_news_gesture_layout" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.mainlayout.PartJobListActivity">
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.message.personal.Message_person_activity"
+            android:label="@string/title_activity_message_person_activity" >
+        </activity>
+         <activity
+            android:name="com.clv.parttimejobs.activity.message.personal.Message_person_set_activity"
+            >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.login.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.login.ForgetPssword"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.login.register.Registered"
+            android:label="@string/title_activity_registered" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.mainlayout.Search_activity"
+            android:label="@string/title_activity_search_activity" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.map.MainMapLocation"
+            android:label="@string/title_activity_main_map_location" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.login.SelectPicPopupWindow"
+            android:label="@string/title_activity_select_pic_popup_window"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.dailyattendance.QdActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.dailyattendance.GiftActivity"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <activity
+            android:name="com.clv.mylayout.MyResumeInformation"
+            android:label="@string/title_activity_my_resume_information" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.schoollife.Myschoollayout"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.login.UserWriteZL"
+            android:label="@string/title_activity_user_write_zl" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.aboutus.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.contactus.AboutSoftware"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.creditlife.Mycredit"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.minelayout.scheduling.Xcapactivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.resume.Wdjl_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.specialattention.MyGZ_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mycollection.MySCactivity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.identity.Sfz_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.identity.Fbzj" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.identity.Sfzrz" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.identity.Sfzrz_sh" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.identity.Xsrz_sh" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.resumeexperience.JZjlactivity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWalletActivity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_MainLayout_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_lrmm_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_tx_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_txjd_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_TJYingHangKa_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_YZSJ_activty" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_mybd_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.mywallet.MyWallet_zdmx_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.mainlayout.jobxq.JobXQ_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.mainlayout.jobxq.gsxq.GongSi_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.mainlayout.jobxq.gsxq.gongsiimg_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.set.ST_mainActivity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.set.XGMM_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.set.ZHAQ_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.set.GHBD_activity" >
+        </activity>
+        <activity android:name="com.clv.parttimejobs.activity.minelayout.set.GHYX_activity" >
+        </activity>
+        <activity
+            android:name="com.clv.parttimejobs.activity.utiltobigimg.ImgBigActivty"
+            android:label="@string/title_activity_img_big_activty" >
+        </activity>
+    </application>
+
+</manifest>

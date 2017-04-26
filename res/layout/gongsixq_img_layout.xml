@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:id="@+id/gsxq_img_rey01"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/about_us_return_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/mylogin_icon_back_nor" />
+
+        <ImageButton
+            android:id="@+id/mycreadit_return_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="共14张"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gsxq_img_gridview01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+         android:verticalSpacing="15dp" 
+         android:horizontalSpacing="15dp"
+        android:numColumns="2"
+        />
+</LinearLayout>

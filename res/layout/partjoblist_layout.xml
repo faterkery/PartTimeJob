@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/gray_1">
+
+    <RelativeLayout
+        android:id="@+id/rey_head"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@color/white" >
+
+        <ImageButton
+            android:id="@+id/mycreadit_return_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/mylogin_icon_back_nor" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="兼职信息"
+            android:textColor="@color/gray_8"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rey_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey_head"
+        android:background="@color/white"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/heaed_hen"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_1" />
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heaed_hen"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rey01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/search_lei_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/my_icon_chose_nor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/search_lei_imageview"
+                        android:singleLine="true"
+                        android:text="兼职种类"
+                        android:textColor="#6d6d6d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/search_lei"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#ececec" />
+
+            <RelativeLayout
+                android:id="@+id/rey02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/search_time_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/my_icon_chose_nor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/search_time_imageview"
+                        android:singleLine="true"
+                        android:text="时间类型"
+                        android:textColor="#6d6d6d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/search_time"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#ececec" />
+
+            <RelativeLayout
+                android:id="@+id/rey03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/search_jiesuan_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/my_icon_chose_nor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/search_jiesuan_imageview"
+                        android:singleLine="true"
+                        android:text="结算方式"
+                        android:textColor="#6d6d6d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/search_jiesuan"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#ececec" />
+
+            <RelativeLayout
+                android:id="@+id/rey04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/search_paixu_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/my_icon_chose_nor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/search_paixu_imageview"
+                        android:singleLine="true"
+                        android:text="排序方式"
+                        android:textColor="#6d6d6d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/search_paixu"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:button="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/lin"
+            android:background="@color/gray_1" />
+    </RelativeLayout>
+
+    <com.clv.parttimejobs.thirdparty.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/news_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rey_01"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray_1"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+    <com.clv.parttimejobs.view.ui.customview.ExpandView_jiesuan
+        android:id="@+id/expandView_jiesuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey_01"
+        android:background="#00FF00"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <com.clv.parttimejobs.view.ui.customview.ExpandView_paixu
+        android:id="@+id/expandView_paixu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey_01"
+        android:background="#00FF00"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <com.clv.parttimejobs.view.ui.customview.ExpandView_shijian
+        android:id="@+id/expandView_shijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey_01"
+        android:background="#00FF00"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <com.clv.parttimejobs.view.ui.customview.ExpandView_zhonglei
+        android:id="@+id/expandView_zhonglei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey_01"
+        android:background="#00FF00"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

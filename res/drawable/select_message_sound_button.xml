@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/mes2_button_selmic_nor"
+        ></item>
+    
+    <item
+        android:drawable="@drawable/mes2_button_mic_nor"
+        ></item>
+</selector>

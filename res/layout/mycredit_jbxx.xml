@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <Button
+        android:id="@+id/mycredit_jbxx_rey_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" />
+
+    <RelativeLayout
+        android:id="@+id/rey01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/mycredit_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/mycredit_edittext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="107dp"
+            android:layout_toLeftOf="@+id/mycredit_imageview1"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/bg_edittext"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:maxLines="10"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/mycredit_imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            
+            android:src="@drawable/myjxx_icon_pan_nor" />
+        <ImageButton
+             android:id="@+id/mycredit_imageview1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:visibility="gone"
+            android:src="@drawable/myjxx_icon_right_gou" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rey02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey01"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/mycredit_rey01_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mycredit_rey01_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="77dp"
+            android:layout_toRightOf="@+id/mycredit_rey01_textview1"
+            android:text="暂无"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/mycredit_rey01_ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/mycredit_rey01_textview2"
+            android:background="@null"
+            android:src="@drawable/selected_button_ljrz" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rey03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey02"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/mycredit_rey02_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mycredit_rey04_textview_xb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="77dp"
+            android:layout_toRightOf="@+id/mycredit_rey02_textview1"
+            android:text="暂无"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rey04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey03"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/mycredit_rey04_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身高"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/mycredit_rey04_edittext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="77dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/mycredit_rey04_imageview1"
+            android:layout_toRightOf="@+id/mycredit_rey04_textview1"
+            android:background="@drawable/bg_edittext"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:text="175"
+            android:singleLine="true"
+            android:maxLines="3"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/mycredit_rey04_imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:src="@drawable/myjxx_icon_pan_nor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rey05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey04"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/mycredit_rey05_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出生年月"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mycredit_rey05_textview_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_toRightOf="@+id/mycredit_rey05_textview1"
+            android:text="暂无"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rey06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey05"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/mycredit_rey06_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常用手机"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mycredit_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_toRightOf="@+id/mycredit_rey06_textview1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/mycredit_rey06_imageview1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@null"
+            android:src="@drawable/myjxx_icon_pan_nor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rey07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rey06"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/mycredit_rey07_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子邮箱"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/mycredit_bxx_edittext02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_toRightOf="@+id/mycredit_rey07_textview1"
+            android:background="@null"
+            android:focusable="false"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/mycredit_rey07_imageview1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/myjxx_icon_pan_nor" />
+    </RelativeLayout>
+
+</RelativeLayout>
